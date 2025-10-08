@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginbackground"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/loginbackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:fontFamily="@font/symtext"
+                android:text="VAULTED"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp" />
+
+            <SearchView
+                android:layout_width="351dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-15dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/rounded_corner"
+                android:searchIcon="@android:drawable/ic_menu_search" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-12dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:orientation="vertical"
+                android:padding="26dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/symtext"
+                    android:text="TRENDING"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card1"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/nb9060" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="New Balance 9060"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="8dp"
+                            android:outlineSpotShadowColor="@color/white"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/nikeair95blu" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Nike Air Max 95"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+
+                                    android:src="@drawable/yeezyslides" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Yeezy Slides"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="8dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/barcaaway" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="FC Barcelona 3rd Away Kit"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/symtext"
+                    android:text="UNVAULTED DROPS"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card5"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/adidasshirt" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Adidas Vintage Block Shirt"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card6"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/nikejs" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Nike JS "
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card7"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/adidasyeezystonegrey" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Adidas Yeezy Stone Grey"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card8"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/nikeair95blu" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Air Max 95 Ash and Solar Red"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/symtext"
+                    android:text="IN THE VAULT"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card9"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/airmaxplusviivarsitymaize" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Air max Plus VII"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card10"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/airmax95mediumashandsolarred" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Air Max 95 Ash and Solar Red"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card11"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/lafranceoaktree" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="PUMA LaFrance 'Oak Tree'"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card12"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_marginRight="8dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/kobeaf1courtpurple" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Kobe Bryant x Nike AF1"
+                                    android:textAlignment="center" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

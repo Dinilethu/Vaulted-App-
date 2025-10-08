@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/loginbackground">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logoContainer"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/vaultedlogo"
+                android:padding="16dp"
+                app:tint="#FFFFFF" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create your Account"
+            android:textSize="28dp"
+            android:fontFamily="@font/symtext"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Username"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:fontFamily=""
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
+            android:inputType="text"
+            android:id="@+id/usernameInput"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Email Address"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailInput"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
+            android:inputType="textPassword"
+            android:id="@+id/passwordInput"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:hint="Confirm Password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="18dp"
+            android:inputType="textPassword"
+            android:id="@+id/confirmpasswordInput"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:backgroundTint="#00BCD4"
+            android:padding="18dp"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"
+            android:id="@+id/registerBtn"/>
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Have an Account? Log In"
+            android:textSize="18sp"
+            android:textColor="#00BCD4"
+            android:fontFamily=""
+            android:layout_marginTop="15dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

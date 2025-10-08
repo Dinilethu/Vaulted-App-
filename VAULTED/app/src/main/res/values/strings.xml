@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VAULTED</string>
+    <string name="back">Back</string>
+    <string name="product_name">Product Name</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="product_description_goes_here">Product description goes here...</string>
+    <string name="where_to_find_this_product_for_purchase">Where to find this product for purchase:</string>
+    <string name="https_example_com_product">https://example.com/product</string>
+</resources>
