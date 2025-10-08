@@ -2,8 +2,8 @@ Name(s) & Surname(s): Ntokozo Molefe (ST10376406) & Dinilethu Malatse (ST1026483
 Module Code: OPSC6312  
 Assignment: Part 2 (App Prototype Development & Documentation) 
  
-Vaulted App – Prototype Documentation 
-1.	Project Overview 
+**Vaulted App – Prototype Documentation 
+1.	Project Overview **
 Vaulted is a mobile fashion and sneaker discovery platform designed for enthusiasts to stay updated on cultural releases, sneaker drops, and brand news. The app focuses on timely discovery rather than direct commerce, providing users with curated product information and links to verified retailers. 
 Key Features in Prototype: 
 •	User registration and login with encrypted password handling (via SessionManager, later extensible to Firebase Auth) 
@@ -13,8 +13,8 @@ Key Features in Prototype:
 •	Demonstration of asynchronous API calls, image loading, and local session management 
 Target Audience: Fashion and sneaker enthusiasts who want a lightweight discovery app without in-app purchases. 
  
-2.	Architecture & Design 
-2.1	App Structure 
+**2.	Architecture & Design 
+2.1	App Structure **
 The app uses a fragment-based architecture under a single MainActivity: 
 Fragment 	Purpose 
 LoginFragment 	User authentication 
@@ -30,8 +30,8 @@ A SessionManager handles:
 •	User preferences 
 It allows the app to function without a full backend during the prototype phase. 
  
-3.	API Integration 
-3.1	Sneaker Database API 
+**3.	API Integration **
+**3.1	Sneaker Database API **
 •	Type: Public RESTful API 
 •	Purpose: Fetch sneaker data (brand, name, release date, image) 
 •	Integration: Using Retrofit and Kotlin Coroutines 
@@ -47,7 +47,7 @@ Glide 	Image loading and caching
 Kotlin Coroutines 	Asynchronous calls 
 Material Components 	UI design consistency 
  
-4.	User Authentication & Encryption 
+**4.	User Authentication & Encryption **
 •	Current: SessionManager stores hashed password locally 
 •	Future: Firebase Auth for secure authentication 
 •	Flow: 
@@ -63,7 +63,7 @@ Material Components 	UI design consistency
 <img width="566" height="745" alt="image" src="https://github.com/user-attachments/assets/b4ee49ed-07ab-486a-a36c-6baf67f59a55" />
  
  
-7.	Demo Video Checklist 
+**7.	Demo Video Checklist **
 1.	User registration & login 
 2.	Password encryption demonstration 
 3.	Changing settings/preferences 
